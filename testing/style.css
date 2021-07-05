@@ -1,0 +1,113 @@
+:root{
+    --darkgrey: #5e6864;
+    --whitesmoke-beige: #dfdddd;
+}
+
+*{margin: 0;padding: 0;}
+body{
+    width: 100vw;
+    background-image: url(../assets/png/kali-neon.png);
+    background-size: cover;
+    height: 100vh;
+}
+    #main_container{
+    }
+        .Sub-window{
+            width: 20vw;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.575);
+            overflow: hidden;
+            resize: both;
+            border: 2px black solid;
+            border-top: none;
+            background-color: white;
+        }
+            .btop{
+                display: flex;
+                background-color: black;
+                justify-content: space-between;
+            }
+                .window_name{
+                    font-family: sans-serif;
+                    color: white;
+                    margin-left: 5px;
+                    margin-top: 2px;
+                }
+                .window_controls_container{
+                }
+                .window_controls{
+                    border: none;
+                    border-radius: 0px;
+                    outline: none;
+                    box-shadow: none;
+                    color: white;
+                    width: 2vw;
+                    height: 3vh;
+                }
+                    .window_close_button{
+                        background-color: black;
+                    }
+                    .window_close_button:hover{
+                        background-color: red;
+                    }
+
+                    .window_shrink_button{
+                        background-color: black;
+                    }
+                    .window_shrink_button:hover{
+                        background-color: yellow;
+                    }
+            .window_container{
+                min-width: 10vw;
+                background-color: white;
+                min-height: 15vh;
+                display: block;
+            }
+            
+    #taskbar{
+        position: fixed;
+        display: flex;
+        height: 31px;
+        width: 100vw;
+        border-bottom: 2px solid black;
+        background-color: #343434;
+    }
+        #menu_button_container{
+            width: fit-content;
+            border-right: 2px solid white;
+        }
+            #menu_button{
+                outline: none;
+                box-shadow: none;
+                border: none;
+                width: 100px;
+                height: 31px;
+                color: white;
+                background-color: inherit;
+            }
+                #menu_logo{
+                    height: 31px;
+                }
+                #menu_button:hover{
+                    background-color: lightcoral;
+                }
+        .apps_container{
+            display: flex;
+        }
+            .apps{
+            }
+                .apps_buttons{
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                    background-color: inherit;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    color: white;
+                }
+                    .apps_icons{
+                        height: 29px;
+                    }
+                    .apps:hover{
+                        background-color: lightcoral;
+                    }
+                    

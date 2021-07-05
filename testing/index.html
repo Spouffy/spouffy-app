@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing app</title>
+    <script defer src="../js/Subrary.js"></script>
+    <script defer src="windows.js"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="taskbar">
+        <div id="menu_button_container">
+            <button id="menu_button"> 
+                <img id='menu_logo' src="../assets/png/Subrary WebOS logo.png" alt="">
+            </button>
+        </div>
+        <div class="apps_container">
+            <div class="apps">
+                <div id="app1">
+                    <button class='apps_buttons' id='windowcreator:launcher' onclick="var wc = spawnWindow('main_container', windowCreator);">
+                        <img class='apps_icons' src="../assets/WebOS icons/windowCreator.png" alt="Window Creator icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_container">
+    </div>
+</body>
+</html>

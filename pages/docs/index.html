@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../js/Subrary.js"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1 id="title">Subrary documentations</h1>
+        <ul>
+            <li class="listelm" id='getElm'>
+                <h2 class='mid_title'>FUNCTION : getElm()</h2>
+                <h4 class="def">returns html element (target can be a class name or id or tag name)</h4>
+                <div class="example_area" id="getelm">
+                    <label>></label>
+                    <span>getElm('body')</span>
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : hide(target)</h2>
+                <h4 class="def">set target's display to none (uses getElm() targeting system)</h4>
+                <div class="example_area" id="hide">
+                    <label>></label>
+                    <span>hide('hideElm')</span>
+                    <span><input id='hidebtn' type="button" onclick="hide('hideElm')" value="Hide element"><div id="hideElm">element</div></span>
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : show(target)</h2>
+                <h4 class="def">set target's display to block (uses getElm() targeting system)</h4>
+                <div class="example_area" id="show">
+                    <label>></label>
+                    <span>show('showelm')</span>
+                    <span><input id='showbtn' type="button" onclick="show('showelm')" value="Show element"><div id="showelm" style="display: none ;">element</div></span>
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : ElmFollowCursor(delay,id)</h2>
+                <h4 class="def">set target's display to block (uses getElm() targeting system)</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : pgcd(integer, integer)</h2>
+                <h4 class="def">returns the commun devider of two numbers</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : randomInt(minimum, maximum)</h2>
+                <h4 class="def">returns a random integer between min and max parameters (DO NOT USE FOR SECURITY)</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : createElm(tagName, parentTarget)</h2>
+                <h4 class="def">create and returns an html element by giving the tag name and the parent (getElm() targeting system)</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : on(event, target, function)</h2>
+                <h4 class="def">puts Event Listener on any element (getElm() targeting system) and passes an anonym function</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+            <li class="listelm">
+                <h2 class='mid_title'>FUNCTION : load(target, file_path)</h2>
+                <h4 class="def">dynamicly adds html page on html element (getElm() targeting system)</h4>
+                <div class="example_area" id="show">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

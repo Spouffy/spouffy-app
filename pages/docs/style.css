@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root{ /*Variables*/
+    --font: #EE4540;
+    --bg-color: #EE4540;
+    --nav-bg: #2D142C;
+    --main-font: #C72C41;
+    --links-color: #eb485e;
+    --docs-func-bg: #4d2a4ba2;
+}
+*{margin: 0;padding: 0; font-family: 'Poppins', sans-serif;}
+
+body{
+}
+
+a{
+    color: var(--links-color)
+}
+
+#title{
+    font-size: 4rem;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+    font-family: 'Zen Dots', 'cursive';
+    color: var(--font);
+}
+
+.mid_title{
+    background-color: var(--bg-color);
+    color: var(--nav-bg);
+}
+
+.listelm{
+    background-color: var(--nav-bg);
+    margin-top: 5%;
+    margin-right: 2%;
+}
+
+.def{
+    margin: 1rem 0rem 0rem 2rem;
+    color: var(--font);
+}
+
+.example_area{
+    display: flex;
+    border-top: 3px  var(--bg-color) solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2rem;
+}
+.example_area > label{
+    color: grey;
+    font-size: 1rem;
+}
+.example_area > span{
+    color: var(--font);
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--bg-color);
+    border-radius: 10px;
+  }::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+    border-radius: 10px;
+  }::-moz-scrollbar {
+    width: 10px;
+  }::-moz-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--bg-color);
+    border-radius: 10px;
+  }::-moz-scrollbar-thumb {
+    background: var(--bg-color);
+    border-radius: 10px;
+  }

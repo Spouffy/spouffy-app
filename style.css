@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+
+:root{ /*Variables*/
+    --font: #EE4540;
+    --bg-color: #EE4540;
+    --nav-bg: #2D142C;
+    --main-font: #C72C41;
+}
+*{margin: 0;padding: 0;}
+
+body{
+    background-image: url('assets/svg/Sun-Tornado.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+object{
+    margin-left: 15px;
+    margin-top: 1.5%;
+    width: 98%;
+    height: 95%;
+}
+
+.container{
+    display: flex;
+}
+#navbar{
+    position: sticky;
+    height: 100vh;
+    width: 12vw;
+    background-color: var(--nav-bg);
+    box-shadow: 13px 0px 42px -16px rgba(45,20,44,1);
+    transition: 250ms;
+    min-width: 160px;
+    opacity: 80%;
+}
+#navbar:hover{
+    opacity: 100%;
+}
+
+.navitems{
+    font-family: 'Poppins', 'cursive';
+    font-size: 1.8rem;
+    height: fit-content;
+    height: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    width: -moz-fit-content;
+    margin: -moz-auto;
+    background-color: var(--nav-bg);
+    margin-top: 10px;
+    transition-delay: 20ms;
+    transition-duration: 100ms;
+}
+#git{
+    text-decoration: none;
+}
+
+.navitems:hover{
+}
+
+#logo{
+    width: fit-content;
+    margin: auto;
+    margin: -moz-auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#slogo{
+  width: 48px;
+    cursor: pointer;
+}
+.links{
+    transition-duration: 250ms;
+    color: var(--main-font);
+    height: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.links:hover{
+    color: var(--nav-bg);
+    background-color: var(--main-font);
+    cursor: pointer;
+}
+
+#itemscont{
+    background-color: var(--nav-bg) ;
+}
+
+#page{
+    width: 88%;
+    margin-left: auto;
+    transition-duration: 250ms;
+}
+.dl_content > .links{
+    text-decoration: none;
+    display: none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#dl:hover   .dl_content > .links{
+    display: block;
+}
+
+@media (orientation: portrait){
+    #burger{
+        display: block;
+    }
+}
